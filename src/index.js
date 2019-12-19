@@ -71,7 +71,7 @@ render() {
       </div>
 
       <div className="text">
-        количество пересадок
+        количество пересадок111
       </div>
 
       <div className="switch">
