@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-
+/*
 class GetSearchId extends React.Component {
   constructor(props) {
   	super(props);
@@ -46,7 +46,7 @@ render() {
     }
   }
 }
-
+*/
 
 
 
@@ -70,11 +70,20 @@ render() {
       <div className="filter">
       </div>
 
-      <div className="text">
-        количество пересадок111
+        <div className="filtertext">
+        количество пересадок
+        </div>
+
+        <div className="checkboxAll">
+        </div>
+        
+
+
+
+      <div className="ticket1">
       </div>
 
-      <div className="switch">
+      <div className="tabs">
 
       </div>
 
