@@ -79,12 +79,60 @@ body {
   border-radius: 5px;
 }
 
-.ticket1 {
+.ticket {
   position: absolute;
   left: 355px;
   right: 103px;
   top: 230px;
   bottom: 936px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ticket2 {
+  position: absolute;
+  left: 355px;
+  right: 103px;
+  top: 434px;
+  bottom: 732px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ticket3 {
+  position: absolute;
+  left: 355px;
+  right: 103px;
+  top: 638px;
+  bottom: 528px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ticket4 {
+  position: absolute;
+  left: 355px;
+  right: 103px;
+  top: 842px;
+  bottom: 324px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ticket5 {
+  position: absolute;
+  left: 355px;
+  right: 103px;
+  top: 1046px;
+  bottom: 120px;
 
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
