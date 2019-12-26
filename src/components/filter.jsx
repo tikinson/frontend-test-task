@@ -1,19 +1,17 @@
 import React from 'react';
 import './filter.css';
 
-
-
 const Filter = () => {
 	return (
 	<div className='filter'> 
 
-		<div className='filterName'>
+		<div className='text'>
 			количество пересадок
 		</div>
 		<div className='textAll'>
 			все
 		</div>
-		<div className='textWithoutTrans'>
+		<div className='textNoTrans'>
 			без пересадок
 		</div>
 		<div className='textOneTrans'>

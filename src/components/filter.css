@@ -1,5 +1,4 @@
 .filter {
-
   position: absolute;
   left: 10.73%;
   right: 65.1%;
@@ -10,28 +9,26 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #4A4A4A;
 }
 
-.filterName {
-position: absolute;
-width: 192px;
-height: 12px;
-left: 20px;
-top: 20px;
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 12px;
-/* identical to box height, or 100% */
-
-display: flex;
-align-items: flex-end;
-letter-spacing: 0.5px;
-text-transform: uppercase;
-
-color: #4A4A4A;
+.text {
+  position: absolute;
+  width: 192px;
+  height: 12px;
+  left: 20px;
+  top: 20px;
 }
 
 .textAll {
@@ -42,109 +39,46 @@ color: #4A4A4A;
   left: 50px;
   top: 52px;
   
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
-
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-
-  color: #4A4A4A;
-
+ 
 }
 
-.textWithoutTrans {
-
+.textNoTrans {
   position: absolute;
   width: 192px;
   height: 12px;
   left: 50px;
   top: 92px;
   
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
-
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-
-  color: #4A4A4A;
-
+ 
 }
 
 .textOneTrans {
-
   position: absolute;
   width: 192px;
   height: 12px;
   left: 50px;
   top: 132px;
   
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
-
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-
-  color: #4A4A4A;
-
+ 
 }
 
 .textTwoTrans {
-
   position: absolute;
   width: 192px;
   height: 12px;
   left: 50px;
   top: 172px;
   
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
-
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-
-  color: #4A4A4A;
 
 }
 
 .textThreeTrans {
-
   position: absolute;
   width: 192px;
   height: 12px;
   left: 50px;
   top: 212px;
   
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
-
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-
-  color: #4A4A4A;
 
 }
+
