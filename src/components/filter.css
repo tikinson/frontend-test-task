@@ -32,14 +32,11 @@
 }
 
 .textAll {
-
   position: absolute;
   width: 192px;
   height: 12px;
   left: 50px;
   top: 52px;
-  
- 
 }
 
 .textNoTrans {
@@ -48,8 +45,6 @@
   height: 12px;
   left: 50px;
   top: 92px;
-  
- 
 }
 
 .textOneTrans {
@@ -58,8 +53,6 @@
   height: 12px;
   left: 50px;
   top: 132px;
-  
- 
 }
 
 .textTwoTrans {
@@ -68,8 +61,6 @@
   height: 12px;
   left: 50px;
   top: 172px;
-  
-
 }
 
 .textThreeTrans {
@@ -78,7 +69,5 @@
   height: 12px;
   left: 50px;
   top: 212px;
-  
-
 }
 
