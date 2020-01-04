@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -50,27 +49,27 @@ render() {
 */
 
 
-class Page extends React.Component{
+class Page extends React.Component {
 
- // constructor (props) {
+    // constructor (props) {
 
- // }
+    // }
 
-render() {
-  return(
-    <div className="page">
+    render() {
+        return (
+            <div className="page">
       <Logo />
       <Filter />
       <Tabs />
     </div>
-    );
-  }
+        );
+    }
 }
 
 
 // ========================================
 
 ReactDOM.render(
-  <Page />,
-  document.getElementById('root')
+    <Page />,
+    document.getElementById('root')
 );

@@ -2,7 +2,7 @@ import React from 'react';
 import './tabs.css';
 
 const Tabs = () => {
-	return <div className="tabs"> 
+    return <div className="tabs"> 
 		<div className='cheap'>
 		самый дешевый
 		</div>

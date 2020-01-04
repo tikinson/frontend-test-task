@@ -33,6 +33,10 @@
     border-radius: 0 5px 5px 0;
 }
 
+.fast:active {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
 .cheap {
     display: flex;
     width: 252px;
@@ -40,5 +44,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px 0 0 5px;
-    background: #2196F3;
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
+/*.cheap.active {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}*/

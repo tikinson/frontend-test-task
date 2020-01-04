@@ -1,73 +1,71 @@
 .filter {
-  position: absolute;
-  left: 10.73%;
-  right: 65.1%;
-  top: 11.85%;
-  bottom: 69.48%;
+    position: absolute;
+    left: 10.73%;
+    right: 65.1%;
+    top: 11.85%;
+    bottom: 69.48%;
 
-  background: #FFFFFF;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
 
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+    display: grid;
+    grid-template-areas: "header"
+      "container"
+      "container"
+      "container"
+      "container"
+      "container";
+     
+    grid-template-columns:232px; 
+    grid-template-rows: 40px; 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 
-  color: #4A4A4A;
+    color: #4A4A4A;
+}
+
+.container: {
+  grid-area:container;
+  width: 232px;
+  height: 40px;
+}
+
+.container:hover {
+  background-color: #F1FCFF;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9ABBCE;
+  box-sizing: border-box;
+  border-radius: 2px;
+  grid-area: checkbox;
+
+  position: relative;
+  left: 20px;
+  top:10px;
 }
 
 .text {
-  position: absolute;
-  width: 192px;
-  height: 12px;
+  height: 20px;
+  position: relative;
+  left: 50px;
+  bottom: 5px;
+  text-transform: none;
+}
+
+.header {
+  grid-area: header;
+  position: relative;
   left: 20px;
-  top: 20px;
-}
-
-.textAll {
-  position: absolute;
-  width: 192px;
-  height: 12px;
-  left: 50px;
-  top: 52px;
-}
-
-.textNoTrans {
-  position: absolute;
-  width: 192px;
-  height: 12px;
-  left: 50px;
-  top: 92px;
-}
-
-.textOneTrans {
-  position: absolute;
-  width: 192px;
-  height: 12px;
-  left: 50px;
-  top: 132px;
-}
-
-.textTwoTrans {
-  position: absolute;
-  width: 192px;
-  height: 12px;
-  left: 50px;
-  top: 172px;
-}
-
-.textThreeTrans {
-  position: absolute;
-  width: 192px;
-  height: 12px;
-  left: 50px;
-  top: 212px;
+  top:20px;
 }
 

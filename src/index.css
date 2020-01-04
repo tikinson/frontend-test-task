@@ -1,16 +1,16 @@
 @import url(https://fonts.google.com/?query=open+san&selection.family=Open+Sans);
 
 body {
-  position: relative;
-  width: 960px;
-  height: 1350px;
-  background: #F3F7FA;
+    position: relative;
+    width: 960px;
+    height: 1350px;
+    background: #F3F7FA;
 }
 
 .logo {
-  position: absolute;
-  left: 46.88%;
-  right: 46.88%;
-  top: 3.7%;
-  bottom: 91.85%;
+    position: absolute;
+    left: 46.88%;
+    right: 46.88%;
+    top: 3.7%;
+    bottom: 91.85%;
 }
