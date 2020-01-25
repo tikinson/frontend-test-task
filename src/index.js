@@ -8,22 +8,46 @@ import GetTickets from './components/tickets';
 
 
 
-
 class Page extends React.Component {
 
-    // constructor (props) {
+    constructor(props) {
+      super(props);
+      this.state = {
+        error: null,
+        isLoaded: false,
+        searchId: null,
+        
+    };
+  }
+   componentDidMount() {
 
-    // }
+    fetch ('https://front-test.beta.aviasales.ru/search')
+      .then(response => response.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            searchId: result.searchId
+          });
+        },
+        (error) => {
+              this.setState({
+                isLoaded: true,
+                error
+              });
+          }
+      )
+  }
 
   
 
     render() {
         return (
-          <div className="page">
+          <div className="wrapper">
             <Logo />
-            <Filter />
             <Tabs />
-            <GetTickets />
+            <Filter  />
+            <GetTickets searchId={this.props.searchId} />
           </div>
         );
     }
