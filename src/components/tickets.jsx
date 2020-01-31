@@ -13,57 +13,39 @@ class GetTickets extends React.Component {
     		error: null,
     		isLoaded: false,
     		searchId: null,
-    		tickets: []
+    		tickets: [],
     };
   }
 
- /* getSearchId = async (e) => {
-    e.preventDefault();
-    const api_url = await
-    fetch(`https://front-test.beta.aviasales.ru/search`);
-    const searchId = await api_url.json();
-    console.log(searchId);
-    }*/
 componentDidMount() {
-    fetch ('https://front-test.beta.aviasales.ru/search')
-    	.then(response => response.json())
-    	.then(
-    		(result) => {
-    			this.setState({
-    				isLoaded: true,
-    				searchId: result.searchId
+ fetch(`https://front-test.beta.aviasales.ru/search`)
+  .then(response => response.json())
+  .then(result => {
+   const searchId = result.searchId;
+    this.setState({
+     isLoaded: true,
+     tickets: searchId,
+    });
+    return searchId
+   }
+  )
+  .then(searchId => fetch(`https://front-test.beta.aviasales.ru/tickets?searchId=${searchId}`))
+  .then(response => response.json())
+  .then(result => {
+    this.setState({
+     isLoaded: true,
+     tickets: result.tickets,
+    });
 
-    			});
-    		},
-    		(error) => {
-            	this.setState({
-            		isLoaded: true,
-            		error
-            	});
-        	}
-    	)
+   }
 
-
-    	.then(response => fetch(`https://front-test.beta.aviasales.ru/tickets?searchId=${this.searchId}`))
-    	.then(response => response.json())
-    	.then(
-    		(result) => {
-    			this.setState({
-    				isLoaded: true,
-    				searchId: result.tickets
-
-    			});
-    		},
-    		
-    	)
-
-
-	}
+  )
+ }
 
 	render() {
 		const { error, isLoaded, searchId, tickets} = this.state;
 	if (error) {
-    	return <div>Ошиб: {error.message}</div>;
+    	return <div>Ошибка: {error.message}</div>;
     } else if (!isLoaded) {
     	return <div>Загрузка...</div>;
     } else {

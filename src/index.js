@@ -11,12 +11,6 @@ import GetTickets from './components/tickets';
 
 class Page extends React.Component {
 
-    // constructor (props) {
-
-    // }
-
-  
-
     render() {
         return (
           <div className="page">
