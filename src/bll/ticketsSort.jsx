@@ -1,17 +1,27 @@
 import React from 'react';
+import GetTickets from './getTickets'
+
 
 
 
 class TicketsSort extends React.Component {
-
-//constructor(){};
+	constructor(props){
+	super(props);
+	this.state = { 
+		//tickets: [],
+		};
+	}
 
 
 
 
 
 	render(){
-		return ();
+		const {tickets, } = this.props.tickets;
+//console.log(this.props.tickets[0].carrier);
+		return (
+			1
+			);
 	}
 
 }

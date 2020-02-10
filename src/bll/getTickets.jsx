@@ -1,5 +1,6 @@
 import React from 'react';
-import './tickets.css';
+/*import './tickets.css';*/
+import TicketsSort from './ticketsSort'
 
 
 
@@ -34,9 +35,11 @@ class GetTickets extends React.Component {
                         isLoaded: true,
                         tickets: result.tickets,
                     });
+
             //console.log(this.state.tickets[0].carrier);
             //console.log(this.state.tickets[0].price);
             //console.log(this.state.tickets[0].segments);
+            //{origin, destination, date, stops, duration}
 
                 }
 
@@ -52,7 +55,7 @@ class GetTickets extends React.Component {
             return <div>Загрузка...</div>;
         } else {
             return (
-                <div> {} </div>
+                <TicketsSort tickets={this.state.tickets} />
             );
         }
     }

@@ -4,7 +4,7 @@ import './index.css';
 import Logo from './components/logo';
 import Filter from './components/filter';
 import Tabs from './components/tabs';
-import GetTickets from './components/getTickets';
+import GetTickets from './bll/getTickets';
 import TicketsSort from './bll/ticketsSort';
 
 
@@ -19,7 +19,7 @@ class Page extends React.Component {
             <Filter />
             <Tabs />
             <GetTickets />
-            <TicketsSort />
+            
           </div>
         );
     }
