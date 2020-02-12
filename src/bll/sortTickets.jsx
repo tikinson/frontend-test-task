@@ -4,13 +4,16 @@ import GetTickets from './getTickets'
 
 
 
-class TicketsSort extends React.Component {
+class SortTickets extends React.Component {
 	constructor(props){
 	super(props);
 	this.state = { 
+
 		//tickets: [],
 		};
+
 	}
+
 
 
 
@@ -33,4 +36,4 @@ class TicketsSort extends React.Component {
 
 
 
-export default TicketsSort;
+export default SortTickets;

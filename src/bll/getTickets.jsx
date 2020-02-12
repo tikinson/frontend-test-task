@@ -1,6 +1,6 @@
 import React from 'react';
 /*import './tickets.css';*/
-import TicketsSort from './ticketsSort'
+import SortTickets from './sortTickets'
 
 
 
@@ -55,7 +55,7 @@ class GetTickets extends React.Component {
             return <div>Загрузка...</div>;
         } else {
             return (
-                <TicketsSort tickets={this.state.tickets} />
+                <SortTickets tickets={this.state.tickets} />
             );
         }
     }

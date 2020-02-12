@@ -5,7 +5,7 @@ import Logo from './components/logo';
 import Filter from './components/filter';
 import Tabs from './components/tabs';
 import GetTickets from './bll/getTickets';
-import TicketsSort from './bll/ticketsSort';
+import SortTickets from './bll/sortTickets';
 
 
 
