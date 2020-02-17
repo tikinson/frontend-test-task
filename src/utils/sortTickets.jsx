@@ -9,10 +9,16 @@ class SortTickets extends React.Component {
 	super(props);
 	this.state = { 
 
-		//tickets: [],
+		renderData: [],  //will be props to render in tickets.jsx
 		};
 
 	}
+    
+    componentDidMount() {
+
+
+
+    }
 
 
 
@@ -20,8 +26,8 @@ class SortTickets extends React.Component {
 
 
 	render(){
-		const {tickets, } = this.props.tickets;
-//console.log(this.props.tickets[0].carrier);
+		const renderData = this.state;
+console.log(Array.from(this.props.tickets)); // for each elements.......
 		return (
 			1
 			);

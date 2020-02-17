@@ -17,15 +17,20 @@ class GetTickets extends React.Component {
         };
     }
 
+
+
+
     componentDidMount() {
         fetch(`https://front-test.beta.aviasales.ru/search`)
             .then(response => response.json())
             .then(result => {
                 const searchId = result.searchId;
+
                 this.setState({
                     isLoaded: true,
                     tickets: searchId,
                 });
+
                 return searchId
             })
             .then(searchId => fetch(`https://front-test.beta.aviasales.ru/tickets?searchId=${searchId}`))
@@ -35,6 +40,12 @@ class GetTickets extends React.Component {
                         isLoaded: true,
                         tickets: result.tickets,
                     });
+                },
+                (error) => {
+                this.setState({
+                    isLoaded: true,
+                    error
+                });
 
             //console.log(this.state.tickets[0].carrier);
             //console.log(this.state.tickets[0].price);
